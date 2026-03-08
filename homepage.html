@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe Stock Review Helper — Chrome Extension</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f0f1a; color: #e0e0e0; min-height: 100vh; }
+    .hero { text-align: center; padding: 80px 20px 40px; }
+    .hero h1 { font-size: 32px; color: #fff; margin-bottom: 12px; }
+    .hero p { font-size: 16px; color: #aaa; max-width: 500px; margin: 0 auto 24px; line-height: 1.6; }
+    .hero a { display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #f5af19, #f12711); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 15px; transition: opacity .2s; }
+    .hero a:hover { opacity: .85; }
+    .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+    .feature { background: #1e1e2e; border: 1px solid #333; border-radius: 12px; padding: 24px; width: 240px; }
+    .feature h3 { font-size: 14px; color: #fff; margin-bottom: 8px; }
+    .feature p { font-size: 13px; color: #999; line-height: 1.6; }
+    .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+    .dot-blue { background: #2196F3; }
+    .dot-red { background: #F44336; }
+    .dot-pink { background: #E91E90; }
+    .dot-gold { background: #FFD600; }
+    .section { text-align: center; padding: 40px 20px; max-width: 600px; margin: 0 auto; }
+    .section h2 { font-size: 22px; color: #fff; margin-bottom: 16px; }
+    .section p { font-size: 14px; color: #aaa; line-height: 1.8; }
+    .pro-box { background: #1e1e2e; border: 1px solid #444; border-radius: 12px; padding: 32px; max-width: 400px; margin: 0 auto; text-align: center; }
+    .pro-box .price { font-size: 32px; font-weight: 700; color: #f5af19; margin: 12px 0; }
+    .pro-box ul { text-align: left; list-style: none; margin: 16px 0; font-size: 14px; line-height: 2; }
+    .pro-box li::before { content: "\2713"; color: #4CAF50; font-weight: 700; margin-right: 8px; }
+    .pro-box a { display: block; padding: 12px; background: linear-gradient(135deg, #f5af19, #f12711); color: #fff; text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 14px; margin-top: 16px; }
+    .footer { text-align: center; padding: 40px 20px; font-size: 12px; color: #666; border-top: 1px solid #222; margin-top: 40px; }
+    .footer a { color: #888; text-decoration: none; }
+    .free-list { list-style: none; text-align: left; max-width: 360px; margin: 16px auto; font-size: 14px; line-height: 2.2; }
+    .free-list li::before { content: "\2713"; color: #2196F3; font-weight: 700; margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Adobe Stock Review Helper</h1>
+    <p>A Chrome extension that helps Adobe Stock contributors quickly identify, select, and manage their uploads on the review page.</p>
+    <a href="#">Install from Chrome Web Store</a>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <h3><span class="dot dot-blue"></span> Commercial</h3>
+      <p>Instantly spot commercial content with blue highlights and badges.</p>
+    </div>
+    <div class="feature">
+      <h3><span class="dot dot-red"></span> Editorial</h3>
+      <p>Editorial uploads are outlined in red so you never mix them up.</p>
+    </div>
+    <div class="feature">
+      <h3><span class="dot dot-pink"></span> AI Generated</h3>
+      <p>AI-generated content is highlighted in pink for easy identification.</p>
+    </div>
+    <div class="feature">
+      <h3><span class="dot dot-gold"></span> Batch Actions</h3>
+      <p>Select files by type, shift-click to multi-select, and batch delete. (PRO)</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Free Features</h2>
+    <ul class="free-list">
+      <li>Color-coded highlights for all content types</li>
+      <li>Content type badges on every tile</li>
+      <li>Commercial, Editorial, and AI file counts</li>
+      <li>Enable/disable toggle</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Upgrade to PRO</h2>
+    <div class="pro-box">
+      <div class="price">$1.99</div>
+      <p style="color:#aaa;font-size:13px">One-time payment, lifetime access</p>
+      <ul>
+        <li>Select all files by type</li>
+        <li>Checkbox selection on tiles</li>
+        <li>Shift-click multi-select</li>
+        <li>Batch delete selected files</li>
+      </ul>
+      <a href="https://yiu-cheung.github.io/asrh-pro/">Get PRO</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>By YiuCheung &middot; <a href="mailto:yiumail@gmail.com">yiumail@gmail.com</a> &middot; <a href="https://yiu-cheung.github.io/asrh-pro/privacy.html">Privacy Policy</a></p>
+  </div>
+</body>
+</html>
